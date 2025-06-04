@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-800 mb-8">ONNX Model Parser</h1>
         
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
