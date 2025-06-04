@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FileUpload from './components/FileUpload';
 import ModelViewer from './components/ModelViewer';
 import { parseONNXModelComplete } from './ONNXParser';
+import RawCanvas from './components/RawCanvas';
 
 function App() {
   const [modelData, setModelData] = useState(null);
@@ -47,6 +48,11 @@ function App() {
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Model Information</h2>
           <ModelViewer modelData={modelData} />
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md p-6">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">Raw Canvas</h2>
+          <RawCanvas modelData={modelData} />
         </div>
       </div>
     </div>
